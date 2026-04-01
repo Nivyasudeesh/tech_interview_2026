@@ -58,7 +58,7 @@ git add .
 ```
 Write a clear, descriptive commit message:
 ```bash
-git commit -m "feat: add contact section, event cards, and register page"
+git commit -m "addED contact section, event cards, and register page AND changed UI of the page"
 ```
 Push to your forked repository:
 ```bash
