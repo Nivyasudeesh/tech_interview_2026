@@ -1,31 +1,135 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FOSS Club Events</title>
+  <link rel="icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAGAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///8A">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
-    <h1>FOSS Club</h1>
+    <div class="logo">
+      <img src="images/foss.png" alt="FOSS Club logo" class="logo-img">
+      <span class="logo-text">FOSS Club</span>
+    </div>
     <nav>
       <a href="#">Home</a>
-      <a href="#">Events</a>
-      <a href="#">Contact</a>
+      <a href="#events">Events</a>
+      <a href="#contact">Contact</a>
     </nav>
+    <div class="header-badge">Open Source</div>
   </header>
 
-    <h2>Upcoming Events</h2>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-text">FOSS</div>
+    <div class="hero-content">
+      <!-- <p class="hero-eyebrow">April 2026 · Coming Up</p> -->
+      <h1 class="hero-title">Build.<br>Break.<br>Contribute.</h1>
+      <p class="hero-sub">A series of open-source events designed to push your skills and connect you with the community.</p>
+      <a href="#events" class="hero-cta">See Events ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">4</span><span class="stat-label">Events</span></div>
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">Weeks</span></div>
+      <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Learning</span></div>
+    </div>
+  </section>
 
+  <!-- EVENTS SECTION -->
+  <section id="events">
+    <div class="section-header">
+      
+      <h2>Events</h2>
+    </div>
 
-      <div class="card">
-        <h3>GIT HUB Basics</h3>
-        <p class="date">April 10, 2026</p>
-        <p>Learn basics of GIT HUB</p>
-        <button>Register</button>
+    <div class="card-container">
+
+      <div class="card" style="--accent: #38bdf8;">
+        <div class="card-top">
+          <span class="card-num">01</span>
+          <span class="card-tag">Git & GitHub</span>
+        </div>
+        <img src="images/github.jpg" alt="GitHub Event">
+        <div class="card-body">
+          <h3>Zero to Git Hero</h3>
+          <p class="date"><span class="dot"></span>December 10, 2025</p>
+          <p class="card-desc">Learn the basics of GitHub — from your first commit to your first pull request.</p>
+          <a href="register.html" class="card-btn">Register →</a>
+        </div>
       </div>
+
+      <div class="card" style="--accent: #34d399;">
+        <div class="card-top">
+          <span class="card-num">02</span>
+          <span class="card-tag">Workshop</span>
+        </div>
+        <img src="images/buildwithfoss.png" alt="Web Dev">
+        <div class="card-body">
+          <h3>Build with FOSS</h3>
+          <p class="date"><span class="dot"></span>January 12, 2026</p>
+          <p class="card-desc">Hands-on open source workshop — discover tools that power the modern web.</p>
+          <a href="register.html" class="card-btn">Register →</a>
+        </div>
+      </div>
+
+      <div class="card" style="--accent: #f59e0b;">
+        <div class="card-top">
+          <span class="card-num">03</span>
+          <span class="card-tag">Linux</span>
+        </div>
+        <img src="images/penguin.png" alt="Linux">
+        <div class="card-body">
+          <h3>Penguin Parade</h3>
+          <p class="date"><span class="dot"></span>Febraury 20, 2026</p>
+          <p class="card-desc">A fun, interactive intro to Linux and the open-source ecosystem.</p>
+          <a href="register.html" class="card-btn">Register →</a>
+        </div>
+      </div>
+
+      <div class="card" style="--accent: #f43f5e;">
+        <div class="card-top">
+          <span class="card-num">04</span>
+          <span class="card-tag">Competition</span>
+        </div>
+        <img src="images/HacktheStack.jpeg" alt="Hackathon">
+        <div class="card-body">
+          <h3>Hack the Stack</h3>
+          <p class="date"><span class="dot"></span>March 2, 2026</p>
+          <p class="card-desc">Compete, collaborate, and showcase your skills in this open source challenge.</p>
+          <a href="register.html" class="card-btn">Register →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="contact-inner">
+      <span class="section-tag light">// get in touch</span>
+      <h2>Contact Us</h2>
+      <p class="contact-sub">Have questions? We'd love to hear from you.</p>
+      <div class="contact-links">
+        <a href="mailto:fossclub@lbsitw.ac.in" class="contact-item">
+          <span class="contact-icon">✉</span>
+          <span>fossclub@lbsitw.ac.in</span>
+        </a>
+        <a  class="contact-item">
+          <span class="contact-icon">✆</span>
+          <span>+91 XXXXX XXXXX</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 FOSS Club </p>
+  </footer>
 
 </body>
 </html>
